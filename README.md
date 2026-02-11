@@ -7,7 +7,7 @@ To intall these dependencies run `apt-get install libasio-dev libncurses-dev lib
 
 ### Installing/Building DVMhost and MMDVM Hat Firmware
 
-1. Clone the DVMhost repository in  `/opt/ `. `git clone https://github.com/DVMProject/dvmhost.git`
+1. Clone the DVMhost repository in  `/opt/`. `git clone https://github.com/DVMProject/dvmhost.git`
 2. Switch into the "dvmhost" folde and Create a new folder named "build" and switch into it.
    ```
    1. cd dvmhost
@@ -34,6 +34,7 @@ To intall these dependencies run `apt-get install libasio-dev libncurses-dev lib
    2. Run `sudo nano /boot/firmware/config.txt` and add `dtoverlay=disable-bt` to the `[all]` section. Then press Ctrl + S to save then Ctrl + X to close.
 
       - If using a Pi3 add `dtoverlay=pi3-disable-bt` to the `[all]` section instead.
+
       - If using a Pi 5 using Bookworm or newer add the below text to the `[all]` section
       ```
       enable_uart=1
