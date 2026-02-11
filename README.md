@@ -32,6 +32,7 @@ To intall these dependencies run `apt-get install libasio-dev libncurses-dev lib
 5. Editing files
    1. Run `sudo nano /boot/firmware/cmdline.txt` and remove `console=serial0, 115200` then press Ctrl + S to save then Ctrl + X to close.
    2. Run `sudo nano /boot/firmware/config.txt` and add `dtoverlay=disable-bt` to the `[all]` section. Then press Ctrl + S to save then Ctrl + X to close.
+
       -If using a Pi3 add `dtoverlay=pi3-disable-bt` to the `[all]` section instead.
       -If using a Pi 5 using Bookworm or newer add the below text to the `[all]` section
       ```
